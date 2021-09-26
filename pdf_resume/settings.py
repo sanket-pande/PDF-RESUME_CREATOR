@@ -123,7 +123,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    # BASE_DIR / "resume/static",
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'collectstaticfiles')
