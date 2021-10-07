@@ -9,7 +9,7 @@ import os
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello, world")
+    return render(request, 'home.html', {})
 
 def view_pdf_resume(request):
     return render(request, 'simple_resume.html', {})
