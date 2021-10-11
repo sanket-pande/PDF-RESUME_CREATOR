@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Unique Resume For every user
 class ResumeObject(models.Model):
@@ -7,8 +8,7 @@ class ResumeObject(models.Model):
 
 # Person
 class Person(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     designation  = models.CharField(max_length=30)
     profile_headline = models.CharField(max_length=100)
     resume = models.ForeignKey(ResumeObject, on_delete=models.CASCADE)
