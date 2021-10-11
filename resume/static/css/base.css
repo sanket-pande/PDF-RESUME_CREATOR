@@ -1,0 +1,18 @@
+:root {
+    /* Colors: */
+    --secondary-colour: #0061A1;
+    --gray: #CBCBCB;
+    --background-colour: #EBF9FF;
+    --black: #000000;
+    --white: #FFFFFF;
+    --unnamed-color-707070: #707070;
+    --primary-colour: #0096F9;
+    /* Other common items */
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-colour);
+}
