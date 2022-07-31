@@ -7,6 +7,7 @@
     --white: #FFFFFF;
     --unnamed-color-707070: #707070;
     --primary-colour: #0096F9;
+    --translucent-gray: #cbcbcb4f;
     /* Other common items */
     font-family: 'Roboto', sans-serif;
 }
@@ -15,4 +16,46 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--background-colour);
+}
+
+.navbar a,
+a.cta,
+a.nav-link {
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 0px;
+	font-weight: bold;
+	color: var(--black);
+	font-family: "Assistant", sans-serif;
+}
+
+.logo span {
+	font-size: 42px;
+}
+
+.logo .left {
+	color: var(--black);
+}
+
+.logo .right {
+	color: var(--primary-colour);
+}
+
+.main-container {
+	width: 70%;
+	max-width: 85rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
 }

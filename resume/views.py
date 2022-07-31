@@ -11,6 +11,20 @@ import os
 def index(request):
     return render(request, 'home.html', {})
 
+def signin_page(request):
+    return render(request, 'signin.html', {})
+
+def signup_page(request):
+    return render(request, 'signup.html', {})
+
+
+def login(request):
+    return HttpResponse('Hello')
+
+def register(request):
+    return HttpResponse('Hello')
+
+
 def view_pdf_resume(request):
     return render(request, 'simple_resume.html', {})
 
@@ -36,3 +50,4 @@ def print_pdf_resume(request):
         response = HttpResponseNotFound('File Not Found')
 
     return response
+
