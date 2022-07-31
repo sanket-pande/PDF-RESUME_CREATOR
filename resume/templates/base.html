@@ -12,7 +12,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
-	<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+	 
+	{% if request.path == "/" %}
+		<link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+	{% endif %}
+	{% if request.path == "/signin" or request.path == "/signup" %}
+		<link rel="stylesheet" href="{% static 'css/signin_signup.css' %}" type="text/css">
+	{% endif %}
 </head>
 
 <body>

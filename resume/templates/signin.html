@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav class="navbar">
+    <a href="/" class="logo">
+        <span class="left">Resume</span>
+        <span class="right">Creator</span>
+    </a>
+</nav>
+
+<div class="main-container">
+    <div class="center column">
+        <div class="column-title">login</div>
+
+        <form action="/login" method="post" class="form-container">
+
+            <div class="form-element">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" placeholder="name@website.com"
+                    class="d-block form-elements text-box">
+            </div>
+            <div class="form-element">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="minimum 8 characters"
+                    class="d-block form-elements text-box">
+            </div>
+
+            {% csrf_token %}
+            <input type="submit" value="login" class="filled cta primary form-element">
+        </form>
+
+        <div class="center-text">
+            don't have an account?
+            <a href="/signup" class="nav-link">sign up</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}
