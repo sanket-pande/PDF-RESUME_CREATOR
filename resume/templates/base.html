@@ -19,6 +19,9 @@
 	{% if request.path == "/signin" or request.path == "/signup" %}
 		<link rel="stylesheet" href="{% static 'css/signin_signup.css' %}" type="text/css">
 	{% endif %}
+	{% if request.path == "/error" %}
+		<link rel="stylesheet" href="{% static 'css/error.css' %}" type="text/css">
+	{% endif %}
 </head>
 
 <body>

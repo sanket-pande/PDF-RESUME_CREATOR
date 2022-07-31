@@ -1,27 +1,40 @@
 :root {
-    /* Colors: */
-    --secondary-colour: #0061A1;
-    --gray: #CBCBCB;
-    --background-colour: #EBF9FF;
-    --black: #000000;
-    --white: #FFFFFF;
-    --unnamed-color-707070: #707070;
-    --primary-colour: #0096F9;
-    --translucent-gray: #cbcbcb4f;
-    /* Other common items */
-    font-family: 'Roboto', sans-serif;
+	/* Colors: */
+	--secondary-colour: #0061A1;
+	--gray: #CBCBCB;
+	--background-colour: #EBF9FF;
+	--black: #000000;
+	--white: #FFFFFF;
+	--unnamed-color-707070: #707070;
+	--primary-colour: #0096F9;
+	--translucent-gray: #cbcbcb4f;
+	/* Other common items */
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: var(--background-colour);
+	padding: 0;
+	margin: 0;
+	background-color: var(--background-colour);
 }
 
+
+/* ============ common classes ============ */
 .navbar a,
 a.cta,
 a.nav-link {
 	text-decoration: none;
+}
+
+.navbar {
+	height: 100px;
+	max-height: 100px;
+	background-color: var(--white);
+	padding: 0px 140px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 5px 10px -5px var(--translucent-gray);
 }
 
 .logo {
@@ -53,9 +66,27 @@ a.nav-link {
 }
 
 .d-block {
-    display: block;
+	display: block;
 }
 
 .d-flex {
-    display: flex;
+	display: flex;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.nav-link {
+	color: var(--primary-colour);
+}
+
+.mv1 {
+    height: 1px;
+    margin: 1rem 0px;
+}
+
+.mh1 {
+    width: 1px;
+    margin: 0px 1rem;
 }
