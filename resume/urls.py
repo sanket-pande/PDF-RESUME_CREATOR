@@ -8,10 +8,11 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('signin', views.signin_page, name='signin_page'),
     path('signup', views.signup_page, name='signup_page'),
+    path('error', views.error_page, name='error_page'),
 
     # API's
-    path('login', views.login, name='login'),
-    path('register', views.register, name='register'),
+    path('login', views.login_user, name='login_user'),
+    path('register', views.register_user, name='register_user'),
 ]
 
 authorised_urls = [
