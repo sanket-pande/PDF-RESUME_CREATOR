@@ -26,7 +26,13 @@ SECRET_KEY = 'django-insecure-zc%gl%uvx!yo^c9933!q)=^+(_64o)y*3^(wjk*9+$w(hmr@(s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pdf-resume-creator-stage.herokuapp.com', 'pdf-resume-creator.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'pdf-resume-creator-stage.herokuapp.com',
+    'pdf-resume-creator.herokuapp.com',
+    'resume-creator.sanketpande.me'
+]
 
 
 # Application definition
