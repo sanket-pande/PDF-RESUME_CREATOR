@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <span class="project-desc b">Resume Maker</span>
+        <span class="project-desc mt">Project to create a Updated Resume from a predefined Template</span>
+
+        <iframe src="{% url 'load_template' %}" frameborder="0" class="iframe-container" id="resume-container"></iframe>
+
+        <span class="project-desc b">
+            How to Use
+        </span>
+        <span class="project-desc">
+            <ul>
+                <li>Container with Red Border is your Resume Template.</li>
+                <li>Change the values in the <b>resumepage.html</b> to your according to your profile.</li>
+                <li>Use Chrome Browser for the best experience.</li>
+                <li>(✓ Check) <i>Background Graphics</i> in Print Dialog to print the resume properly.</li>
+            </ul>
+        </span>
+
+        <button class="btn" id="print-resume-btn">
+            Print
+        </button>
+
+    </div>
+
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+
+</html>

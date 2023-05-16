@@ -1,302 +1,313 @@
 /* * {
-	outline: 1px solid green;
+    outline: 1px solid green;
 } */
 
 .i-size {
-	font-size: inherit;
-	color: inherit;
-	text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: none;
 }
 
 .p-summary.content {
-	text-align: justify;
+    text-align: justify;
 }
 
 .skill-name {
-	border-bottom: 4px solid black;
-	font-weight: 600;
-	width: 100%;
-	margin: 0.75rem 0;
-	padding-bottom: 0.5rem;
-	font-size: 1rem;
+    border-bottom: 4px solid black;
+    font-weight: 600;
+    width: 100%;
+    margin: 0.75rem 0;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .f-mid {
-	font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .experience .skill-list {
-	margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .skill-list {
-	padding-inline-start: 25px;
-	margin-bottom: 20px;
+    padding-inline-start: 25px;
+    margin-bottom: 20px;
 }
 
 .skill-list.last-list {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .skill-list li {
-	margin: 3px 0;
+    margin: 3px 0;
+    font-size: 0.9rem;
 }
 
-.lang-frmwrk.skill-list{
-	padding-inline-start: 0px;
+.lang-frmwrk.skill-list {
+    padding-inline-start: 0px;
 }
+
 .lang-frmwrk.skill-list li {
-	display: inline-block;
-	text-align: justify;
+    display: inline-block;
+    text-align: justify;
 }
 
-.lang-frmwrk.skill-list li::before{
-	content: "";
-	display: inline-block; 
-	border-radius: 50%;
-	height: 0.3em;
-	width: 0.3em;
-	background-color: black;
-	position: relative;
-	margin: 0.2rem 0.6rem;
+.lang-frmwrk.skill-list li::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    height: 0.3em;
+    width: 0.3em;
+    background-color: black;
+    position: relative;
+    margin: 0.2rem 0.6rem;
 }
 
 .experience .skill-list li {
-	font-size: 0.8rem;
-	text-align: justify;
+    font-size: 0.8rem;
+    text-align: justify;
 }
 
 .highlight span {
-	/* padding: 2px 0; */
-	font-weight: 600;
+    /* padding: 2px 0; */
+    font-weight: 600;
 }
 
 .b {
-	font-weight: 600;
+    font-weight: 600;
+}
+
+span.b {
+    font-size: inherit;
 }
 
 .i {
-	font-style: italic;
+    font-style: italic;
 }
 
 .b-line {
-	margin: 1.4rem 0;
-	border-bottom: 1px solid #ccc;
+    margin: 1.4rem 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .resume-body {
-	display: flex;
+    display: flex;
 }
 
 .resume-body .p-0 {
-	padding-top: 0;
-	padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .resume-body .left-body {
-	flex: 1;
+    flex: 1;
 }
 
 .resume-body .right-body {
-	flex: 2;
-	border-left: 1px solid #ccc;
+    flex: 2;
+    border-left: 1px solid #ccc;
 }
 
 .topic-container {
-	display: flex;
-	justify-content: space-between;
-	margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
 }
 
 .topic-container .sub-heading {
-	flex: 1;
+    flex: 1;
 }
 
 .topic-container .content {
-	flex: 3;
-	text-align: justify;
+    flex: 3;
+    text-align: justify;
 }
 
 .point-container {
-	margin: 10px 0;
+    margin: 10px 0;
 }
 
 .point-container:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .point-container .sub-heading {
-	margin: 2px 0;
+    margin: 2px 0;
 }
 
 .btn {
-	margin: 25px auto;
+    margin: 25px auto;
 }
 
 .f-small .hlp {
-	font-size: 0.8rem;
-	/* font-size: 0.9rem; */
+    font-size: 0.8rem;
+    /* font-size: 0.9rem; */
 }
 
 .f-small {
-	font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 .sub-heading {
-	font-weight: 600;
-	font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 
 .section-padding {
-	padding: 20px;
+    padding: 20px;
 }
 
 .resume-header {
-	display: flex;
-	border-bottom: 1px solid #ccc;
+    display: flex;
+    border-bottom: 1px solid #ccc;
 }
 
 .resume-section {
-	border-bottom: 1px solid #ccc;
-	padding: 1.5rem 0;
+    border-bottom: 1px solid #ccc;
+    padding: 1.5rem 0;
 }
 
 .resume-section:last-child {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 .name-section {
-	width: 50%;
-	border-right: 1px solid #ccc;
+    width: 50%;
+    border-right: 1px solid #ccc;
 }
 
 .info-section {
-	flex: 1;
-	padding-right: 0;
-	/* padding-left: 10mm; */
-	padding-top: 0.5rem;
+    flex: 1;
+    padding-right: 0;
+    /* padding-left: 10mm; */
+    padding-top: 0.5rem;
 }
 
 .name {
-	font-weight: 700;
-	font-size: 3rem;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .title {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 .section-heading {
-	font-size: 1.1rem;
-	font-weight: 500;
-	width: max-content;
-	margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: max-content;
+    margin-bottom: 1rem;
 }
 
 .section-heading:after {
-	display: block;
-	content: "";
-	width: 55%;
-	height: 2px;
-	border-bottom: 3px solid black;
+    display: block;
+    content: "";
+    width: 55%;
+    height: 2px;
+    border-bottom: 3px solid black;
 }
 
 * {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
 }
 
-.project-desc{
-	margin: 5px auto;
+.project-desc {
+    margin: 5px auto;
 }
 
-.project-desc.b{
-	margin-top: 40px;
+.project-desc.b {
+    margin-top: 40px;
 }
 
-.project-desc ul{
-	margin-block-start: 0;
-	margin-block-end: 0;
+.project-desc ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
-.main-container{
-	display: flex;
-	flex-direction: column;
+.main-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.iframe-container{
-	width: 220mm;
-	min-height: 300mm;
-	margin: 10mm auto;
-	/* padding: 15px 0; */
-	/* border: 1px blue solid; */
+.iframe-container {
+    width: 220mm;
+    min-height: 300mm;
+    margin: 10mm auto;
+    /* padding: 15px 0; */
+    /* border: 1px blue solid; */
 }
 
-.employment .point-container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.employment .point-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .employment .duration {
-	font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 .employment .company {
-	font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 /* ----------------------------- Print Page CSS ---------------------------- */
 
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: #eeeeee;
-	font: 12pt "Tahoma";
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font: 12pt "Tahoma";
 }
 
 * {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .page {
-	width: 210mm;
-	min-height: 297mm;
-	padding: 10mm;
-	margin: auto;
-	border: 1px red solid;
-	background: white;
+    width: 210mm;
+    min-height: 297mm;
+    padding: 10mm;
+    margin: auto;
+    border: 1px red solid;
+    background: white;
 }
 
 .subpage {
-	height: 277mm;
-	/* outline: 10mm #f0eaff solid; */
-	overflow: hidden;
+    height: 277mm;
+    /* outline: 10mm #f0eaff solid; */
+    overflow: hidden;
 }
 
 @page {
-	size: A4;
-	margin: 0;
+    size: A4;
+    margin: 0;
 }
 
 @media print {
-	html,
-	body {
-		width: 210mm;
-		height: 297mm;
-	}
-	.page {
-		margin: 0;
-		border: initial;
-		border-radius: initial;
-		width: initial;
-		min-height: initial;
-		box-shadow: initial;
-		background: initial;
-		page-break-after: always;
-	}
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .page {
+        width: 210mm;
+        height: 210mm;
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
 }

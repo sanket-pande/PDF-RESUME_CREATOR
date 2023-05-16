@@ -12,6 +12,9 @@ from django.contrib.auth import login
 
 # ============================== Web pages =============================
 def index(request):
+	user_auth = UserAuthManager(request.user)
+	if user_auth.is_authenticated():
+		return redirect('view_pdf_resume')
 	return render(request, 'home.html', {})
 
 def signin_page(request):
@@ -62,7 +65,13 @@ def register_user(request):
 
 
 def view_pdf_resume(request):
-	return render(request, 'simple_resume.html', {})
+	user_auth = UserAuthManager(request.user)
+	if user_auth.is_authenticated():
+		return render(request, 'main_resume_page.html', {})
+	return redirect ("index")
+
+def load_template(request):
+    return render(request, 'resume_page.html', {})
 
 def print_pdf_resume(request):
 	file_path = os.path.join(settings.BASE_DIR, 'static', 'resumePage.html')

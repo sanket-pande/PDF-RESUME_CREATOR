@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('signin', views.signin_page, name='signin_page'),
     path('signup', views.signup_page, name='signup_page'),
+    path('template', views.load_template, name='load_template'),
     path('error', views.error_page, name='error_page'),
 
     # API's
