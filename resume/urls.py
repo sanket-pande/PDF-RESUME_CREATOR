@@ -17,6 +17,7 @@ urlpatterns = [
 authorised_urls = [
     path('print-resume/', views.print_pdf_resume, name='print_pdf_resume'),
     path('view-resume/', views.view_pdf_resume, name='view_pdf_resume'),
+    path('view-resume/<str:username>/', views.view_pdf_resume, name='view_pdf_resume_for_user'),
 ]
 
 urlpatterns.extend(authorised_urls)
